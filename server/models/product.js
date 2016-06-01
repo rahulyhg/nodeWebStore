@@ -24,7 +24,7 @@ const schema = mongoose.Schema({
 
 });
 
-schema.plugin(require('./libs/restPlugin'));
+schema.plugin(require('../libs/restPlugin'));
 
 
-module.exports = mongoose.model('User', schema);
+module.exports = mongoose.model('Item', schema);

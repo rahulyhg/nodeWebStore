@@ -8,8 +8,12 @@ exports.get = function*() {
 }
 
 exports.getOne = function*() {
-	let item = yield Model.find({this.id});
-	this.body = item;
+	let product = yield Mail.findOneById(this.id, (err, product) => {
+        if (err) {
+            return console.err(err)
+        }
+        this.body = product;
+    }).exec();
 }
 
 exports.new = function*() {

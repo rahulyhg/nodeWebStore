@@ -1,3 +1,5 @@
+'use strict';
+
 const busboy = require('co-busboy');
 
 

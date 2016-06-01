@@ -1,10 +1,10 @@
 'use strict';
 
-const Model = require('./models/user');
+const Model = require('../models/user');
 let passport = require('koa-passport');
 
 
-exports.post = function*() {
+exports.registration = function*() {
   let user = yield Model.create(this.request.body);
   return user;
 }
