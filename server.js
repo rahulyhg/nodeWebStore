@@ -2,13 +2,13 @@
 
 const koa = require('koa');
 const app = koa();
-
-let webpackMiddleware = require('koa-webpack-dev-middleware');
-let webpack = require('webpack');
-let compiler = webpack(require('./webpack.config'));
-let hotReplacment = require("koa-webpack-hot-middleware")(compiler);
-app.use(webpackMiddleware(compiler),{reload:true});
-app.use(hotReplacment);
+//
+// let webpackMiddleware = require('koa-webpack-dev-middleware');
+// let webpack = require('webpack');
+// let compiler = webpack(require('./webpack.config'));
+// let hotReplacment = require("koa-webpack-hot-middleware")(compiler);
+// app.use(webpackMiddleware(compiler),{reload:true});
+// app.use(hotReplacment);
 
 const mongoose = require('./server/libs/mongoose');
 const config = require('config');

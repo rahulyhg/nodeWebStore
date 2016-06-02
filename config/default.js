@@ -5,7 +5,7 @@ module.exports = {
   // secret data can be moved to env variables
   // or a separate config
   connection: {
-    port: '9000',
+    port: '3000',
     ipaddress: 'localhost'
   },
   keys: ['mysecret'],

@@ -1,12 +1,14 @@
 import angular from 'angular';
-import routing from './app.config';
+import uirouter from "angular-ui-router";
 
-angular.module('app', [])
-    .service(routing)
-    .component('asd', {
-      template: '<h1>qwe</h1>',
-      bindings: {}
-    });
+import 'bootstrap/dist/css/bootstrap.css';
+
+import store from './app/store';
+import routing from './store.config';
+
+
+angular.module('app', [uirouter, store])
+    .config(routing);
 
 
 angular.element(document).ready(function() {

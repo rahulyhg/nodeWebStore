@@ -5,7 +5,7 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "./node_modules/.bin/webpack --watch-poll --inline --hot"
+    "start": "./node_modules/.bin/webpack-dev-server --watch-poll --inline --hot"
   },
   "repository": {
     "type": "git",
@@ -53,7 +53,8 @@
     "style-loader": "^0.13.1",
     "trace": "^2.3.0",
     "url-loader": "^0.5.7",
-    "webpack": "^1.13.1"
+    "webpack": "^1.13.1",
+    "webpack-dev-server": "^1.14.1"
   },
   "bugs": {
     "url": "https://github.com/OlegLustenko/nodeWebStore/issues"
