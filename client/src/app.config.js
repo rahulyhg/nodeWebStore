@@ -7,16 +7,16 @@ export default function Routing ($stateProvider, $locationProvider, $urlRouterPr
     requireBase: false
   });
 
-  $urlRouterProvider.otherwise('/login');
+  $urlRouterProvider.otherwise('/app/login');
 
   $stateProvider
       .state('app', {
-        url: '/',
+        url: '/app',
         template: require('./app.html')
       })
       .state('login', {
         parent: 'app',
         url: '/login',
-        template: require('./components/login/login.html')
+        template: require('./pages/login/login.html')
       })
 }
